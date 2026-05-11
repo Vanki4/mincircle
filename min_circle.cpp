@@ -16,7 +16,7 @@ double distance(const Point2D& p1,const Point2D& p2) {
 }
 
 Circle circleFromDiameter(const Point2D& p1,const Point2D& p2) {
-	return Circle{findMidPoint({p1,p2}),distance(p1,p2)};
+	return Circle{findMidPoint({p1,p2}),distance(p1,p2)/2};
 }
 
 Circle circleFrom3Points(const Point2D& p1,const Point2D& p2,const Point2D& p3) {
